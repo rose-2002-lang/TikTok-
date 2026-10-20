@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+ 
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Luxe - OFFICIAL STORE</title>
+
+ 
+    <script>
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+      var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+      ;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+      ttq.load('DAO44NJC77UFS4KR4FN0');
+      ttq.page();
+      
+      // حدث مشاهدة الصفحة تلقائياً
+      ttq.ready(function() {
+          ttq.track('ViewContent');
+      });
+    }(window, document, 'ttq');
+
+    // دالة الانتقال الفوري للواتساب بدون أي تأخير
+    function openWhatsAppWithTracking(event, url) {
+        event.preventDefault();
+        try {
+            ttq.track('Contact');
+            ttq.track('Lead');
+            ttq.track('InitiateCheckout');
+        } catch(e) {}
+        window.location.href = url;
+    }
+    </script>
+    <!-- TikTok Pixel Code - End -->
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0b0b0b;
+            color: #ffffff;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            justify-content: space-between;
+            padding-bottom: 90px; /* مسافة لكي لا يغطي الشريط السفلي المحتوى */
+        }
+        .main-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 20px 20px 20px;
+            flex: 1;
+        }
+        .store-icon-box {
+            width: 85px;
+            height: 85px;
+            background: linear-gradient(135deg, #1c1c1c, #0f0f0f);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 26px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 25px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6), inset 0 1px 1px rgba(255, 255, 255, 0.1);
+        }
+        .store-icon-box svg {
+            width: 40px;
+            height: 40px;
+            stroke: #d4af37;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 900;
+            margin-bottom: 6px;
+            letter-spacing: 1.5px;
+        }
+        .subtitle {
+            color: #d4af37;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 4px;
+            margin-bottom: 45px;
+            text-transform: uppercase;
+        }
+
+        /* الزر الدائري الأوسط بلون الواتساب الرسمي الحقيقي مع تأثير الضغط المتناسق */
+        .whatsapp-circle-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 125px;
+            height: 125px;
+            background: linear-gradient(145deg, #25d366, #1ebe5d);
+            border-radius: 50%;
+            margin: 0 auto 25px auto;
+            box-shadow: 0 15px 35px rgba(37, 211, 102, 0.35);
+            text-decoration: none;
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .whatsapp-circle-btn:hover {
+            transform: scale(1.06);
+            box-shadow: 0 20px 45px rgba(37, 211, 102, 0.5);
+        }
+        .whatsapp-circle-btn:active {
+            background: linear-gradient(145deg, #128c7e, #0e6f63);
+            transform: scale(0.96);
+            box-shadow: 0 5px 15px rgba(18, 140, 126, 0.5), inset 0 3px 6px rgba(0, 0, 0, 0.3);
+        }
+        .whatsapp-circle-btn svg {
+            width: 65px;
+            height: 65px;
+            fill: #ffffff;
+        }
+
+        .action-label {
+            font-size: 24px;
+            font-weight: 900;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        .action-sub {
+            font-size: 14px;
+            color: #b0b0b0;
+            font-weight: 500;
+            margin-bottom: 35px;
+        }
+        .welcome-text {
+            font-size: 15px;
+            color: #999999;
+            line-height: 1.9;
+            max-width: 350px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        /* تنسيق الشريط السفلي وزر الواتساب الأخضر بحجم أصغر وأنيق */
+        .footer-container {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(11, 11, 11, 0.96);
+            backdrop-filter: blur(12px);
+            border-top: 1px solid rgba(37, 211, 102, 0.2);
+            padding: 10px 16px;
+            z-index: 1000;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.8);
+        }
+
+        .whatsapp-green-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            width: 100%;
+            max-width: 450px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #25d366 0%, #1ebe5d 100%);
+            color: #ffffff;
+            text-decoration: none;
+            padding: 10px 16px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 15px;
+            font-weight: 800;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3), inset 0 1px 2px rgba(255, 255, 255, 0.3);
+            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .whatsapp-green-btn:hover {
+            background: linear-gradient(135deg, #22bf5b 0%, #179c4d 100%);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45), inset 0 1px 3px rgba(255, 255, 255, 0.4);
+            transform: translateY(-1px);
+        }
+
+        .whatsapp-green-btn:active {
+            background: linear-gradient(135deg, #168542 0%, #0f5c2e 100%);
+            box-shadow: 0 2px 8px rgba(15, 92, 46, 0.6), inset 0 2px 4px rgba(0, 0, 0, 0.3);
+            transform: translateY(1px);
+        }
+
+        .whatsapp-green-btn svg {
+            width: 22px;
+            height: 22px;
+            fill: #ffffff;
+            filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.15));
+        }
+        
+        .whatsapp-green-btn span {
+            letter-spacing: 0.3px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="store-icon-box">
+            <svg viewBox="0 0 24 24" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path>
+                <line x1="7" y1="7" x2="7.01" y2="7"></line>
+            </svg>
+        </div>
+
+        <h1>Aura Luxe</h1>
+        <div class="subtitle">OFFICIAL STORE</div>
+
+        <!-- زر الواتساب الدائري الرئيسي مع الانتقال الفوري -->
+        <a href="https://wa.me/972524069344?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%81%D8%A7%D8%AA%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20TikTok%20%D9%88%D8%A3%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF%3F" 
+           class="whatsapp-circle-btn" 
+           onclick="openWhatsAppWithTracking(event, this.href)" 
+           aria-label="راسلنا عبر واتساب">
+            <svg viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+        </a>
+
+        <div class="action-label">اضغط هنا</div>
+        <div class="action-sub">ابدأ محادثة الطلب الفوري</div>
+
+        <div class="welcome-text">
+            نحن هنا لنقدم لك تجربة تسوق استثنائية. تواصل معنا الآن لخدمتك بسرعة وإتمام طلبك بكل سهولة.
+        </div>
+    </div>
+
+    <!-- شريط أسفل الصفحة يحمل زر الواتساب الأخضر النحيف والأنيق -->
+    <div class="footer-container">
+        <a href="https://wa.me/972524069344?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D8%8C%20%D9%84%D9%82%D8%AF%20%D8%B5%D8%A7%D8%AF%D9%81%D8%A7%D8%AA%20%D8%A7%D8%B9%D9%84%D8%A7%D9%86%D9%83%20%D8%B9%D9%84%D9%89%20TikTok%20%D9%88%D8%A3%D9%88%D8%AF%20%D9%85%D8%B9%D8%B1%D9%81%D8%A9%20%D8%A7%D9%84%D9%85%D8%B2%D9%8A%D8%AF%3F" 
+           class="whatsapp-green-btn" 
+           onclick="openWhatsAppWithTracking(event, this.href)">
+            <svg viewBox="0 0 24 24">
+                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.124-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+            </svg>
+            <span>راسلنا عبر الواتساب</span>
+        </a>
+    </div>
+
+</body>
+</html>
